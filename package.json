@@ -3,7 +3,11 @@
   "version": "0.1.1",
   "type": "module",
   "private": true,
-  "scripts": {
+  "scripts": {"
+    "scripts": {
+  "start": "pm2 start package.json"
+}
+
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
