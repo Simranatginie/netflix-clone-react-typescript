@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
+      - run: pm2 restart 
         env:
           VITE_APP_API_ENDPOINT_URL: '${{ secrets.VITE_APP_API_ENDPOINT_URL }}'
           VITE_APP_TMDB_V3_API_KEY: '${{ secrets.VITE_APP_TMDB_V3_API_KEY }}'
